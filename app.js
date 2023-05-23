@@ -2,6 +2,8 @@ let kissojenMaara = 0;
 let kissaVoima = 1;
 let kissatSekunnissa = 0;
 
+document.getElementById("kissat").innerHTML = kissojenMaara + " Kissaa";
+
 function kissaNappi() {
     kissojenMaara = kissojenMaara + kissaVoima
     tulostaKissojenMaara()

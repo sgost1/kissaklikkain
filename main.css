@@ -54,6 +54,44 @@ main {
     font-weight: 400;
 }
 
+#pikiNappi {
+    width: 20%;
+    height: 10%;
+    border-radius: 60px;
+}
+#pikiNappi {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+#pikiNappi:hover {background-color: #3e8e41}
+#pikiNappi:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#nappula {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -75,7 +113,7 @@ main {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */

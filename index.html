@@ -13,32 +13,24 @@
             <li id="kissat"></li>
             <li id="kissatSekunnissa"></li>
             <li id="kissaVoimat"></li>
+            <li><button id="myBtn">Päivitys Valikko</button></li>
           </ul>
         </nav>
       </header>
 
 <main>
-    <button onclick="kissaNappi()">Lisää kisu</button> 
+    <input type="image" onclick="kissaNappi()" id="pikiNappi" src="pikikuva.jpg.jpg">
 
-    <br><button onclick="kissaVoimaYksi()">Kissavoima V1 (10 kissaa)</button>
+    <br><button id="nappula" onclick="kissaVoimaYksi()">Kissavoima V1 (10 kissaa)</button><br>
 
-
-
-
-<!-- Trigger/Open The Modal -->
-<br><button id="myBtn">Päivitys Valikko</button>
-
-<!-- The Modal -->
+<!-- Päivitysvalikko -->
 <div id="myModal" class="modal">
-
-  <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="btn-group">
       <button class="button" onclick="kissanMaito()">Kissanmaito (50 kissaa) --- +1 kissa /s </button>
     </div>
   </div>
-
 </div>
 
 

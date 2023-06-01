@@ -164,4 +164,44 @@ main {
   
   .btn-group .button:hover {
     background-color: #3e8e41;
-  }
+}
+
+
+.upgrade-menu {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.upgrade-menu h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.upgrade-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.upgrade-menu li {
+  margin-bottom: 10px;
+}
+
+.upgrade-name {
+  font-weight: bold;
+}
+
+.upgrade-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #45a049;
+}

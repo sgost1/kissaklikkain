@@ -27,6 +27,7 @@ function kissaVoimaYksi() {
         tulostaKissojenMaara()
         document.getElementById("kissaVoimat").innerHTML = "Voima: " + kissaVoima;
     }
+
 }
 
 function kissanMaito() {
@@ -50,10 +51,6 @@ let span = document.getElementsByClassName("close")[0];
 // Avaa valikko kun käyttäjä painaa nappia
 btn.onclick = function() {
   modal.style.display = "block";
-}
-// Jos käyttäjä painaa X merkkiä niin valikko sulkeutuu
-span.onclick = function() {
-  modal.style.display = "none";
 }
 // Jos käyttäjä klikkaa valikon ulkopuolelta niin valikko sulkeutuu
 window.onclick = function(event) {

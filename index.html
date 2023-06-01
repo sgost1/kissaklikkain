@@ -34,7 +34,7 @@
 <!-- Päivitysvalikko -->
 <div id="myModal" class="modal">
   <div class="modal-content">
-    <span class="close"></span>
+    <span class="close">&times;</span>
     <div class="btn-group">
 
       <div class="upgrade-menu">
@@ -46,7 +46,7 @@
           </li>
           <li>
             <span class="upgrade-name">Kissavoima V1</span>
-            <button class="upgrade-button"  onclick="kissaVoimaYksi()"><strong>10 KISSAA</strong></button>
+            <button class="upgrade-button" onclick="kissaVoimaYksi()"><strong>10 KISSAA</strong></button>
           </li>
         </ul>
       </div>
@@ -55,10 +55,27 @@
   </div>
 </div>
 
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Päivitys Valikko</h2>
+    <ul style="list-style-type: none;">
+      <li>
+        <span class="upgrade-name">Kissan Maito</span>
+        <button class="upgrade-button" onclick="kissanMaito()"><strong>50 KISSAA</strong></button> </li>
+      </li>
+      <li>
+        <span class="upgrade-name">Kissavoima V1</span>
+        <button class="upgrade-button" onclick="kissaVoimaYksi()"><strong>10 KISSAA</strong></button>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 
 <div class="footer">
-  <button id="myBtn">Päivitys Valikko</button>
+  <button id="modalButton">Päivitys Valikko</button>
 </div>
 
 <script src="app.js"></script>

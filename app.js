@@ -45,14 +45,26 @@ function lisaaKissanMaito() {
 }
 
 // Päivitysvalikko
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
-// Avaa valikko kun käyttäjä painaa nappia
-btn.onclick = function() {
+// Get the modal element
+var modal = document.getElementById("modal");
+
+// Get the button that opens the modal
+var modalButton = document.getElementById("modalButton");
+
+// Get the close button element
+var closeButton = document.getElementsByClassName("close")[0];
+
+// Open the modal when the button is clicked
+modalButton.onclick = function() {
   modal.style.display = "block";
 }
-// Jos käyttäjä klikkaa valikon ulkopuolelta niin valikko sulkeutuu
+
+// Close the modal when the close button is clicked
+closeButton.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close the modal when the user clicks outside of it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

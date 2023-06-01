@@ -79,17 +79,6 @@ main {
     transform: translateY(4px);
 }
 
-#nappula {
-    background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
 .footer {
     position: fixed;
     left: 0;
@@ -135,10 +124,10 @@ main {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */

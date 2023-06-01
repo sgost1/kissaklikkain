@@ -61,3 +61,24 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function tallennaPeli() {
+    var tiedot = {
+        kissojenMaara: kissojenMaara,
+        kissaVoima: kissaVoima,
+        kissatSekunnissa: kissatSekunnissa
+    };
+    localStorage.setItem('peliTiedot', JSON.stringify(tiedot));
+}
+
+function tuoPeliTallennus() {
+    var tiedot = JSON.parse(localStorage.getItem('peliTiedot'));
+    if (tiedot) {
+        kissojenMaara = tiedot.kissojenMaara;
+        kissaVoima = tiedot.kissaVoima;
+        kissatSekunnissa = tiedot.kissatSekunnissa;
+    }
+    tulostaKissojenMaara()
+    document.getElementById("kissaVoimat").innerHTML = "Voima: " + kissaVoima;
+    document.getElementById("kissatSekunnissa").innerHTML = kissatSekunnissa + " /s"
+}
